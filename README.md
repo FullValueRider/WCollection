@@ -19,6 +19,9 @@ Set myList = WCollection.Deb
 
 As far as possible, methods return either a value or the instance of Me, to allow chaining of methods.
 
+As of the intial upload there are 146 Rubberduck unit tests, all of which are passing.
+The VBA code compiled into a twinBasic 64 bit ActiveX.dll is also provided but is currently showing some issues as 86 of the tests fail when referencing the Activex.
+
 ## Some Terminology/Organisation Stuff ##
 <ul>
 <li>WCollection stands for Wrapped Collection</li>
