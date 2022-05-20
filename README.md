@@ -42,7 +42,7 @@ The VBA code runs 'as is' in ttwinBasic so I've also included 32 and 64 bit comp
  
 </ul>
 
-## List of Methods in Alphabetical Order##
+## List of Methods in Alphabetical Order ##
 
 Add
 AddRange
