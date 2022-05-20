@@ -44,60 +44,57 @@ The VBA code runs 'as is' in ttwinBasic so I've also included 32 and 64 bit comp
 
 ## List of Methods in Alphabetical Order ##
 
-Add
-AddRange
-AddString
-Clone
-Count
-Dedup
-Dequeue
-Enqueque
-EnqueueRange
-EnqueueString
-FilterIt
-First
-FirstIndex
-HasAnyItems
-HasItems
-HasNoItems
-HasOneItem
-HoldsItem
-IndexOf
-Insert
-InsertRange
-InserttString
-IsEquivalent
-IsSameOrder
-Item 'Default member
-Join
-LacksItem
-Last
-LastIndex
-LastIndexOf
-Mapit
-NewEnum
-Peek
-Pop
-Push
-PushRange
-PushString
-ReduceIt
-Remove
-RemoveAll
-RemoveAnyOf
-RemoveFirstOf
-RemoveLastOf
-SetItem  ' a chainable version of Set Item
-SetOfCommon
-SetOfHostOnly
-SetOfInputOnly
-SetOfNotCommon
-SetOfUnique
-Sort
-ToArray
-
-
-
+<p>Add 
+<p>AddRange 
+<p>AddString 
+<p>Clone
+<p>Count
+<p>Dedup
+<p>Dequeue
+<p>Enqueque
+<p>EnqueueRange
+<p>EnqueueString
+<p>FilterIt
+<p>First
+<p>FirstIndex
+<p>HasAnyItems
+<p>HasItems
+<p>HasNoItems
+<p>HasOneItem
+<p>HoldsItem
+<p>IndexOf
+<p>Insert
+<p>InsertRange
+<p>InserttString
+<p>IsEquivalent
+<p>IsSameOrder
+<p>Item 'Default member
+<p>Join
+<p>LacksItem
+<p>Last
+<p>LastIndex
+<p>LastIndexOf
+<p>Mapit
+<p>NewEnum
+<p>Peek
+<p>Pop
+<p>Push
+<p>PushRange
+<p>PushString
+<p>ReduceIt
+<p>Remove
+<p>RemoveAll
+<p>RemoveAnyOf
+<p>RemoveFirstOf
+<p>RemoveLastOf
+<p>SetItem  ' a chainable version of Set Item
+<p>SetOfCommon
+<p>SetOfHostOnly
+<p>SetOfInputOnly
+<p>SetOfNotCommon
+<p>SetOfUnique
+<p>Sort
+<p>ToArray
 
 ## The user interface (API)  ##
 
