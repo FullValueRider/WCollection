@@ -219,29 +219,59 @@ myList.AddString "Hello World It's a nice day", " "
 
 
 
-Clone
+#### Clone ####
+
+```
 '@Description("Returns a a New WCollection that is a shallow copy of the Items in p.Coll")
 Public Function Clone() As WCollection
+```
 
-Count
+
+#### Count ####
+
+```
 '@Description("Returns the number of items in the WCollection")
 Public Property Get Count() As Long
+```
 
-Dedup
+
+#### Dedup ####
+
+```
+
 '@Description("Returns a New WCollection containing unique items")
 Public Function Dedup() As WCollection
 
-Dequeue
+```
 
-Enqueque
+
+#### Dequeue ####
+```
+
+
+```
+
+
+#### Enqueque ####
+```
+
 '@Description("Sugar for Add. Adds Queue terminology")
 Public Function Enqueue(ParamArray ipItems() As Variant) As WCollection
+```
 
-EnqueueRange
+
+#### EnqueueRange ####
+```
+
 '@Description("Sugar for AddRange. Adds Queue terminology")
 Public Function EnqueueRange(ByVal ipEnumerable As Variant) As WCollection
+```
 
-EnqueueString
+
+#### EnqueueString ####
+
+```
+
 '@Description("Sugar for AddString.  Adds Queue terminology")
 Public Function EnqueueString _
 ( _
@@ -249,40 +279,93 @@ Public Function EnqueueString _
     Optional ByVal ipSeparator As String _
 ) As WCollection
 
-FilterIt
+```
+
+#### FilterIt ####
+
+```
+
 '@Description("Returns a New WCollection based on the result of the ipCompareIt function"
 Public Function FilterIt(ByVal ipCompareIt As ICmpIt) As WCollection
 
-First
+```
+
+#### First ####
+
+```
+
+
 '@Description("Sugar for .Item(FirstIndex), Returns 'Empty' if the WCollection has no items")
 Public Function First() As Variant
 
+```
 
-FirstIndex
+
+
+#### FirstIndex ####
+
+```
+
 '@Description("The Lbound of the WCollection, returns -1 is couunt is 0")
 Public Function FirstIndex() As Long
 
-HasAnyItems
+```
+
+
+#### HasAnyItems ####
+
+```
+
 '@Description("True if the WCollection has 1 or more itemp. Sugar for .Count>0")
 Public Function HasAnyItems() As Boolean
 
-HasItems
+```
+
+
+#### HasItems ####
+
+```
+
 '@Description("True if the WCollection has 2 or more itemp. Sugar for .Count>1")
 Public Function HasItems() As Boolean
 
-HasNoItems
+```
+
+
+#### HasNoItems ####
+
+```
+
 '@Description("True it the WCollection has zero items. SUgar for .Count = 0")
 Public Function HasNoItems() As Boolean
 
-HasOneItem
+```
+
+
+#### HasOneItem ####
+
+```
+
 '@Description("True if the WCollection only holds one item. SUgar for .Count = 1")
 Public Function HasOneItem() As Boolean
 
-HoldsItem
+```
+
+
+#### HoldsItem ####
+
+```
+
 'Description("The exists/contains function for WCollection")
 Public Function HoldsItem(ByVal ipItem As Variant) As Boolean
 
-IndexOf
+```
+
+
+#### IndexOf ####
+
+```
+
 '@Description("Returns the index of the first found item, If ipRTL is True the negative index is returned)
 Public Function Indexof _
 ( _
@@ -292,15 +375,35 @@ Public Function Indexof _
     Optional ByVal ipRTL As Boolean = False _
 ) As Long
 
-Insert
+```
+
+
+#### Insert ####
+
+```
+
 '@Description("Inserts the items in the paramarray into the WCollection")
 Public Function Insert(ByVal ipIndex As Long, ParamArray ipItems() As Variant) As WCollection
 
-InsertRange
+```
+
+
+#### InsertRange ####
+
+```
+
+
 '@Description("Inserts the items in any object that can be enumerated using for each.")
 Public Function InsertRange(ByVal ipIndex As Long, ByVal ipItems As Variant) As WCollection
 
-InserttString
+```
+
+
+#### InserttString ####
+
+```
+
+
 '@Description("Inserts a string as individual characters, or, if a separator is provided, as substrings")
 Public Function InsertString _
 ( _
@@ -309,15 +412,34 @@ Public Function InsertString _
     Optional ByVal ipSeparator As String = vbNullString _
 ) As WCollection
 
-IsEquivalent
+```
+
+
+#### IsEquivalent ####
+
+```
+
 '@Description("True if the Wcollection and ipEnumerable contain the same items, irrespective of order")
 Public Function IsEquivalent(ByVal ipEnumerable As Variant) As Boolean
 
-IsSameOrder
+```
+
+
+#### IsSameOrder ####
+
+```
+
 '@Description("True if the items in the WCollection and ipEnumerable match when enumerated by index")
 Public Function IsSameOrder(ByVal ipEnumerable As Variant) As Boolean
 
-Item 'Default member
+```
+
+
+#### Item 'Default member ####
+
+```
+
+
 '@Description("Return the item at the specified index, Index may be negative")
 '@DefaultMember
 Public Property Get Item(ByVal ipIndex As Long) As Variant
@@ -325,24 +447,58 @@ Public Property Get Item(ByVal ipIndex As Long) As Variant
 '@Description("Adds items to the WCollection.  Accepts Values and Objects. Index May be negative")
 Public Property Let Item(ByVal ipIndex As Long, ByVal ipItem As Variant)
 
-Join
+```
+
+
+#### Join ####
+
+```
+
+
 '@Description("Simplistic approach to returning the items as a single string, Will error if an item cannot be converted to a string using 'CStr'")
 Public Function Join(Optional ByVal ipSeparator As String = ",") As String
 
+```
 
-LacksItem
+
+#### LacksItem ####
+
+```
+
+
 '@Description("Because I totally dislike "Not HoldsItem" or "Not Exists" etc)
 Public Function LacksItem(ByVal ipItem As Variant) As Boolean
 
-Last
+```
+
+
+#### Last ####
+
+```
+
+
 '@Description("Sugar for .Item(LastIndex). Returns 'Empty' if the WCollection has no items")
 Public Function Last() As Variant
 
-LastIndex
+```
+
+
+#### LastIndex ####
+
+```
+
+
 '@Description("The Ubound of the WCollection, returns -1 if count is 0")
 Public Function LastIndex() As Long
 
-LastIndexOf
+```
+
+
+#### LastIndexOf ####
+
+```
+
+
 '@Description("Returns the index of the first found item when searching from right to left, If ipRTL is True the negative index is returned)
 Public Function LastIndexof _
 ( _
@@ -352,32 +508,78 @@ Public Function LastIndexof _
     Optional ByVal ipRTL As Boolean = False _
 ) As Long
 
-Mapit
+```
+
+
+#### Mapit ####
+
+```
+
 '@Description("Returns a New WCollection where each item is the result of the ipMapIt function")
 Public Function MapIt(ByVal ipMapIt As IMapIt) As WCollection
 
-NewEnum
+```
+
+
+#### NewEnum ####
+
+```
+
 '@Description("Allow 'For Each' on the WCollection class")
 '@Enumerator
 Public Function NewEnum() As IEnumVARIANT
 
-Peek
+```
+
+
+#### Peek ####
+
+```
+
+
 '@Description("Sugar for Item Get. Adds Stack/Queue terminology")
 Public Function Peek(Optional ByVal ipIndex As Long = 1) As Variant
 
-Pop
+```
+
+
+#### Pop ####
+
+```
+
+
 '@Description("Returns an array containing one or more items from LastIndex.  Adds Stack terminology")
 Public Function Pop(Optional ByVal ipCount As Long = 1) As Variant
 
-Push
+```
+
+
+#### Push ####
+
+```
+
 '@Description("Sugar for Add.  Adds terminology for Stack")
 Public Function Push(ParamArray ipItems() As Variant) As WCollection
 
-PushRange
+```
+
+
+#### PushRange ####
+
+```
+
+
 '@Description("Sugar for AddRange.  Adds terminology for Stack")
 Public Function PushRange(ByVal ipEnumerable As Variant) As WCollection
 
-PushString
+```
+
+
+#### PushString ####
+
+```
+
+
 '@Description("Sugar for AddString.  Adds Stack Terminology")
 Public Function PushString _
 ( _
@@ -385,11 +587,25 @@ Public Function PushString _
     Optional ByVal ipSeparator As String _
 ) As WCollection
 
-ReduceIt
+```
+
+
+#### ReduceIt ####
+
+```
+
+
 '@Description("Returns a single value calculated by the ipReduceIt function")
 Public Function ReduceIt(ByVal ipReduceIt As IReduceIt) As Variant
 
-Remove
+```
+
+
+#### Remove ####
+
+```
+
+
 '@Description("Deletes One or more consecutive items from the WCollection")
 Public Function Remove _
 ( _
@@ -397,11 +613,25 @@ Public Function Remove _
     Optional ByVal ipEndIndex As Long = 0 _
 ) As WCollection
 
-RemoveAll
+```
+
+
+#### RemoveAll ####
+
+```
+
+
 '@Description("Returns a new empty collection, does not delete items from the current instance, if ipEndIndex is not supplied removes a single item")
 Public Function RemoveAll() As WCollection
 
-RemoveAnyOf
+```
+
+
+#### RemoveAnyOf ####
+
+```
+
+
 '@("Description("Removes all instances of the item from the specified range")
 Public Function RemoveAnyOf _
 ( _
@@ -410,7 +640,14 @@ Public Function RemoveAnyOf _
     Optional ByVal ipEndIndex As Long = 0 _
 ) As WCollection
 
-RemoveFirstOf
+```
+
+
+#### RemoveFirstOf ####
+
+```
+
+
 '@Description("Removes the first found 'Item' from the specified range when searching from Left to Right")
 Public Function RemoveFirstOf _
 ( _
@@ -419,7 +656,14 @@ Public Function RemoveFirstOf _
     Optional ByVal ipEndIndex As Long = 0 _
 ) As WCollection
 
-RemoveLastOf
+```
+
+
+#### RemoveLastOf ####
+
+```
+
+
 '@Description(Removes the first item in the specified range when searching from Right to Left")
 Public Function RemoveLastOf _
 ( _
@@ -428,39 +672,98 @@ Public Function RemoveLastOf _
     Optional ByVal ipEndIndex As Long = 0 _
 ) As WCollection
 
-SetItem  ' a chainable version of Set Item
+```
+
+
+#### SetItem  ' a chainable version of Set Item ####
+
+```
+
+
 '@Description("Equivalent of Item(x)=xx, but returns the instance of Me to allow chaining")
 Public Function SetItem(ByVal ipIndex As Long, ByVal ipItem As Variant) As WCollection
 
-SetOfCommon
+```
+
+
+#### SetOfCommon ####
+
+```
+
+
 '@Description("Returns a new WCollection of all values in both WCollection and ipEnumerable")
 Public Function SetOfCommon(ByVal ipEnumerable As Variant) As WCollection
 
-SetOfHostOnly
+```
+
+
+#### SetOfHostOnly ####
+
+```
+
+
 '@Description("Returns a new WCollection of all values in WCollection only")
 Public Function SetOfHostOnly(ByVal ipEnumerable As Variant) As WCollection
 
-SetOfInputOnly
+```
+
+
+#### SetOfInputOnly ####
+
+```
+
+
 '@Description("Returns a new WCollection of all values in WCollection only")
 Public Function SetOfInputOnly(ByVal ipEnumerable As Variant) As WCollection
 
-SetOfNotCommon
+```
+
+
+#### SetOfNotCommon ####
+
+```
+
+
 '@Description("Returns a new WCollection of all values in WCollection only or ipEnumerable only")
 Public Function SetOfNotCommon(ByRef ipEnumerable As Variant) As WCollection
 
-SetOfUnique
+```
+
+
+#### SetOfUnique #####
+
+```
+
+
 '@Description("Returns a new WCollection of all unique values in WCollection and ipEnumerable")
 Public Function SetOfUnique(ByRef ipEnumerable As Variant) As WCollection
 
-Sort
+```
+
+
+#### Sort ####
+
+```
+
+
 '@Description("Sorts in ascending numeric or alphabetical order")
 Public Function Sort() As WCollection
 'QuickSort3 from https://www.vbforums.com/showthread.php?473677-VB6-Sorting-algorithms-(sort-array-sorting-arrays)&p=2909260#post2909260
 
-ToArray
+```
+
+
+#### ToArray ####
+
+```
+
+
 '@Description("Returns the content of the intenal collection as an array, Optional parameters allow a subsection of the collection to be selected.")
 Public Function ToArray _
 ( _
     Optional ByVal ipStartIndex As Long = 0, _
     Optional ByVal ipEndIndex As Long = 0 _
 ) As Variant
+
+```
+
